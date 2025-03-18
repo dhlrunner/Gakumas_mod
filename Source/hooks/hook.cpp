@@ -37,6 +37,9 @@ void InitHooks_AfterIl2cppInit()
 	//Unity Init
 	Unity::HookInit();
 
+	//Campus Init
+	Campus::Init();
+
 	//Set the flag
 	Global::Game_HookFinished = true;
 

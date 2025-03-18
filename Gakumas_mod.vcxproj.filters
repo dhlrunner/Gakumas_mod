@@ -127,6 +127,15 @@
     <ClCompile Include="Source\hooks\Unity\UnityEngine.GUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\hooks\Campus\Campus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Campus\InquiryEncryptUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Campus\Qua.LoggerManagement\QuaLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\tools\PEDump\PEDump.h">
@@ -196,6 +205,9 @@
     <ClInclude Include="Source\hooks\Unity\UnityEngine.GUI.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-sanitizers.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.h" />
+    <ClInclude Include="Source\hooks\Campus\Campus.h" />
+    <ClInclude Include="Source\hooks\Campus\InquiryEncryptUtility.h" />
+    <ClInclude Include="Source\hooks\Campus\Qua.LoggerManagement\QuaLogger.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

@@ -3,6 +3,7 @@
 #pragma once
 #include "../hooks/Unity/Unity.h"
 #include "../hooks/Windows/Windows.hpp"
+#include "../hooks/Campus/Campus.h"
 
 #include "../../tools/Logger.hpp"
 #include "../../tools/imgui/ImguiWindows.h"

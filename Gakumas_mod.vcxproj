@@ -159,6 +159,9 @@ rem copy /y "$(TargetPath)" "D:\games\umamusume_custom\umamusume.exe.local\$(Tar
     <ClCompile Include="Source\Export.cpp" />
     <ClCompile Include="Source\Global.cpp" />
     <ClCompile Include="Source\hooks\BackgroundWorker.cpp" />
+    <ClCompile Include="Source\hooks\Campus\Campus.cpp" />
+    <ClCompile Include="Source\hooks\Campus\InquiryEncryptUtility.cpp" />
+    <ClCompile Include="Source\hooks\Campus\Qua.LoggerManagement\QuaLogger.cpp" />
     <ClCompile Include="Source\hooks\hook-helper.cpp" />
     <ClCompile Include="Source\hooks\hook.cpp" />
     <ClCompile Include="Source\hooks\Unity\il2cpp\il2cpp-hook.cpp" />
@@ -203,8 +206,11 @@ rem copy /y "$(TargetPath)" "D:\games\umamusume_custom\umamusume.exe.local\$(Tar
     <ClInclude Include="Source\deps\minhook\include\MinHook.h" />
     <ClInclude Include="Source\Global.h" />
     <ClInclude Include="Source\hooks\BackgroundWorker.h" />
+    <ClInclude Include="Source\hooks\Campus\Campus.h" />
+    <ClInclude Include="Source\hooks\Campus\Qua.LoggerManagement\QuaLogger.h" />
     <ClInclude Include="Source\hooks\hook-helper.h" />
     <ClInclude Include="Source\hooks\hook.h" />
+    <ClInclude Include="Source\hooks\Campus\InquiryEncryptUtility.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-hook.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-sanitizers.h" />
