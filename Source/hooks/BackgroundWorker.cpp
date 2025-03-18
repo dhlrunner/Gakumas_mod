@@ -34,7 +34,7 @@ namespace BackgroundWorker
 				//auto dialog = GallopDialog::ShowTextDialog(L"Dump il2cpp", L"Please wait...", false);
 				auto h = GetModuleHandle(L"GameAssembly.dll");
 				//GallopDialog::SetDialogMessage(dialog, L"Dumping GameAssembly.dll ...");
-				pedump(h, "umamusume.exe.local\\GameAssembly.dumped.dll");
+				pedump(h, "gakumas.exe.local\\GameAssembly.dumped.dll");
 				il2cpp_dump();
 				Sleep(1000);
 				//GallopDialog::CloseDialog(dialog);
@@ -68,7 +68,7 @@ namespace BackgroundWorker
 
 	void Init()
 	{
-		Logger::Info(SECTION_NAME, L"Init");
+		/*Logger::Info(SECTION_NAME, L"Init");
 		Logger::Info(SECTION_NAME, L"Starting thread");
 
 		auto t1 = thread([]() {
@@ -86,6 +86,6 @@ namespace BackgroundWorker
 			il2cpp_thread_detach(tr);
 		});
 		Logger::Info(SECTION_NAME, L"Thread ID: %d", t2.get_id());
-		t2.detach();
+		t2.detach();*/
 	}
 }

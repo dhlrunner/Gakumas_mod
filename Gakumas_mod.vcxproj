@@ -205,11 +205,12 @@ rem copy /y "$(TargetPath)" "D:\games\umamusume_custom\umamusume.exe.local\$(Tar
     <ClInclude Include="Source\hooks\BackgroundWorker.h" />
     <ClInclude Include="Source\hooks\hook-helper.h" />
     <ClInclude Include="Source\hooks\hook.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-hook.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-sanitizers.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cppDictionary.hpp" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp_dump.h" />
     <ClInclude Include="Source\hooks\Unity\Unity.h" />
-    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.hpp" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-types.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-blob.h" />

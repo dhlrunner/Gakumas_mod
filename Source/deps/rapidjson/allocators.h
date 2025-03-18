@@ -149,11 +149,11 @@ class MemoryPoolAllocator {
 
     static inline ChunkHeader *GetChunkHead(SharedData *shared)
     {
-        return reinterpret_cast<ChunkHeader*>(reinterpret_cast<uint8_t*>(shared) + SIZEOF_SHARED_DATA);
+        return reinterpret_cast<ChunkHeader*>(reinterpret_cast<std::uint8_t*>(shared) + SIZEOF_SHARED_DATA);
     }
-    static inline uint8_t *GetChunkBuffer(SharedData *shared)
+    static inline std::uint8_t *GetChunkBuffer(SharedData *shared)
     {
-        return reinterpret_cast<uint8_t*>(shared->chunkHead) + SIZEOF_CHUNK_HEADER;
+        return reinterpret_cast<std::uint8_t*>(shared->chunkHead) + SIZEOF_CHUNK_HEADER;
     }
 
     static const size_t kDefaultChunkCapacity = RAPIDJSON_ALLOCATOR_DEFAULT_CHUNK_CAPACITY; //!< Default chunk capacity.

@@ -61,6 +61,7 @@ namespace UnityEngine::CoreModule
 
 	void* set_RenderTextureAntiAliasing_orig;
 	void set_RenderTextureAntiAliasing_hook(void* _this, int value) {
+		Logger::Info(SECTION_NAME, L"setRenderTextureAntiAliasing: %d -> %d", value, Settings::Local->antialiasing);
 		return reinterpret_cast<decltype(set_RenderTextureAntiAliasing_hook)*>(set_RenderTextureAntiAliasing_orig)(_this,
 			Settings::Local->antialiasing == -1 ? value : Settings::Local->antialiasing);
 	}
@@ -70,10 +71,7 @@ namespace UnityEngine::CoreModule
 	void* Application_Quit_orig;
 	void Application_Quit_hook(int code) {
 		Logger::Info(SECTION_NAME, L"Application.Quit() hooked Code->%d", code);
-		//system("pause");
-		//printf("App will quit after 5 seconds\n");
-		//Sleep(5000);
-		//return;
+
 		Global::gameTerminating = true;
 		reinterpret_cast<decltype(Application_Quit_hook)*>(Application_Quit_orig)(code);
 	}
@@ -82,7 +80,7 @@ namespace UnityEngine::CoreModule
 	void* LoadSceneAsyncNameIndexInternal_hook(Il2CppString* sceneName, int sceneBuildIndex, LoadSceneParameters* parameters, bool mustCompleteNextFrame)
 	{
 		//wcscpy_s(Global::currSceneName, sceneName->length, sceneName->chars);
-		Logger::Debug(SECTION_NAME, L"LoadSceneAsyncNameIndexInternal hooked name=%S", Utils::ConvertWstringToUTF8(sceneName->chars).c_str());
+		//Logger::Debug(SECTION_NAME, L"LoadSceneAsyncNameIndexInternal hooked name=%S", Utils::ConvertWstringToUTF8(sceneName->chars).c_str());
 		Global::currSceneName = sceneName;
 		wstring sceneN = sceneName->chars;
 		
@@ -223,7 +221,7 @@ namespace UnityEngine::CoreModule
 			);*/
 
 		auto set_vSyncCount_addr = il2cpp_resolve_icall("UnityEngine.QualitySettings::set_vSyncCount(System.Int32)");
-		EnableHook(set_vSyncCount_addr, &set_vSyncCount_hook, &set_vSyncCount_orig, L"set_vSyncCount");
+		//EnableHook(set_vSyncCount_addr, &set_vSyncCount_hook, &set_vSyncCount_orig, L"set_vSyncCount");
 
 		auto set_antiAliasing_addr = il2cpp_resolve_icall("UnityEngine.QualitySettings::set_antiAliasing(System.Int32)");
 		EnableHook(set_antiAliasing_addr, &set_antiAliasing_hook, &set_antiAliasing_orig, L"set_antiAliasing");
@@ -232,7 +230,7 @@ namespace UnityEngine::CoreModule
 			"UnityEngine.CoreModule.dll", "UnityEngine",
 			"RenderTexture", "set_antiAliasing", 1
 		);
-		EnableHook(set_RenderTextureAntiAliasing_addr, &set_RenderTextureAntiAliasing_hook, &set_RenderTextureAntiAliasing_orig, L"set_RenderTextureAntiAliasing");
+		//EnableHook(set_RenderTextureAntiAliasing_addr, &set_RenderTextureAntiAliasing_hook, &set_RenderTextureAntiAliasing_orig, L"set_RenderTextureAntiAliasing");
 
 		
 		
@@ -258,10 +256,10 @@ namespace UnityEngine::CoreModule
 		EnableHook(Application_Quit_addr, &Application_Quit_hook, &Application_Quit_orig, L"Application_Quit");
 
 		auto LoadSceneAsyncNameIndexInternal_addr = il2cpp_resolve_icall("UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected(System.String,System.Int32,UnityEngine.SceneManagement.LoadSceneParameters&,System.bool)");
-		EnableHook(LoadSceneAsyncNameIndexInternal_addr, &LoadSceneAsyncNameIndexInternal_hook, &LoadSceneAsyncNameIndexInternal_orig, L"LoadSceneAsyncNameIndexInternal");
+		//EnableHook(LoadSceneAsyncNameIndexInternal_addr, &LoadSceneAsyncNameIndexInternal_hook, &LoadSceneAsyncNameIndexInternal_orig, L"LoadSceneAsyncNameIndexInternal");
 
 		auto SetResolution_Injected_addr = il2cpp_resolve_icall("UnityEngine.Screen::SetResolution_Injected(System.Int32,System.Int32,UnityEngine.FullScreenMode,UnityEngine.RefreshRate)");
-		EnableHook(SetResolution_Injected_addr, &SetResolution_Injected_hook, &SetResolution_Injected_orig, L"SetResolution_Injected");
+		//EnableHook(SetResolution_Injected_addr, &SetResolution_Injected_hook, &SetResolution_Injected_orig, L"SetResolution_Injected");
 		
 
 		get_resolution = reinterpret_cast<decltype(get_resolution)>(il2cpp_resolve_icall("UnityEngine.Screen::get_currentResolution_Injected(UnityEngine.Resolution&)"));

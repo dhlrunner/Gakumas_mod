@@ -160,7 +160,6 @@
     <ClInclude Include="Source\deps\lz4\lz4frame_static.h" />
     <ClInclude Include="Source\deps\lz4\xxhash.h" />
     <ClInclude Include="Source\tools\PEDump\PEDump.h" />
-    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.hpp" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-types.h" />
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-blob.h" />
@@ -195,6 +194,8 @@
     <ClInclude Include="Source\hooks\Unity\il2cpp\il2cppDictionary.hpp" />
     <ClInclude Include="Source\hooks\Unity\UnityEngine.UI.h" />
     <ClInclude Include="Source\hooks\Unity\UnityEngine.GUI.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-sanitizers.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
