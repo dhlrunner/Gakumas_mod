@@ -6,7 +6,7 @@ Modding tool for the PC (DMM) version of the game Gakumas
 
 - **IL2CPP Dump:** Press F8 to generate a dump file from IL2CPP. The dump.cs file will be generated in the modding DLL folder.
 - **Unity Function Hooking:** Partial hooking of some Unity functions.
-- **In-Game ImGUI Window:** Creates an ImGUI window within the game.
+- **In-Game ImGUI Window:** Creates an ImGUI window within the game. (Open key is F12, but no many functions currently.)
 - **Future Enhancements:** More functionalities are planned to be added in upcoming updates.
 
 ## Installation
@@ -40,3 +40,7 @@ Modding tool for the PC (DMM) version of the game Gakumas
 ## Disclaimer
 
 Use this mod at your own risk. The developers are not responsible for any potential damage or issues arising from its use.
+
+## Screenshot
+![C5002912-4EBC-4597-8100-68E0C878B998](https://github.com/user-attachments/assets/0707f194-93ca-4e70-8d82-261e661ecc31)
+
