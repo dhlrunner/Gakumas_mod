@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\PEDump">
+      <UniqueIdentifier>{ccc249d6-cf33-4884-be32-fe57d579f7e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\hooks\Unity\UnityPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tools\PEDump\PEDump.cpp">
+      <Filter>Source Files\PEDump</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Export.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tools\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Windows\Windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\hook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tools\imgui\ImguiWindows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\imgui\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\imgui\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tools\kiero\kiero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\il2cpp\il2cpp_symbols.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tools\http\url.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\lz4\lz4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\lz4\lz4frame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\lz4\lz4hc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\lz4\xxhash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\UnityEngine.Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\Unity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\hook-helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\il2cpp\il2cpp-hook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\UnityEngine.CoreModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\il2cpp\il2cpp_dump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\UnityEngine.InputLegacyModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\BackgroundWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\UnityEngine.AssetBundleModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\implot\implot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\implot\implot_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\deps\implot\implot_items.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\UnityEngine.UI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hooks\Unity\UnityEngine.GUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\tools\PEDump\PEDump.h">
+      <Filter>Source Files\PEDump</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\hooks\hook.h" />
+    <ClInclude Include="Source\deps\imgui\fa_solid_900.h" />
+    <ClInclude Include="Source\deps\imgui\font_awesome_5.h" />
+    <ClInclude Include="Source\deps\imgui\imconfig.h" />
+    <ClInclude Include="Source\deps\imgui\imgui.h" />
+    <ClInclude Include="Source\deps\imgui\imgui_internal.h" />
+    <ClInclude Include="Source\deps\imgui\imgui_notify.h" />
+    <ClInclude Include="Source\deps\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Source\deps\imgui\imstb_textedit.h" />
+    <ClInclude Include="Source\deps\imgui\imstb_truetype.h" />
+    <ClInclude Include="Source\deps\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="Source\deps\imgui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="Source\hooks\Unity\UnityPlayer.hpp" />
+    <ClInclude Include="Source\hooks\Windows\Windows.hpp" />
+    <ClInclude Include="Source\tools\imgui\ImguiWindows.h" />
+    <ClInclude Include="Source\tools\kiero\kiero.h" />
+    <ClInclude Include="Source\tools\Logger.hpp" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp_symbols.hpp" />
+    <ClInclude Include="Source\tools\string.hpp" />
+    <ClInclude Include="Source\tools\http\httplib.h" />
+    <ClInclude Include="Source\tools\http\url.hpp" />
+    <ClInclude Include="Source\Settings.h" />
+    <ClInclude Include="Source\deps\lz4\lz4.h" />
+    <ClInclude Include="Source\deps\lz4\lz4frame.h" />
+    <ClInclude Include="Source\deps\lz4\lz4hc.h" />
+    <ClInclude Include="Source\deps\lz4\lz4frame_static.h" />
+    <ClInclude Include="Source\deps\lz4\xxhash.h" />
+    <ClInclude Include="Source\tools\PEDump\PEDump.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-functions.hpp" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-api-types.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-blob.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-class-internals.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-config.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-config-api.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-metadata.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-object-internals.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-pinvoke-support.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-runtime-metadata.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-string-types.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-tabledefs.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-tokentype.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-windowsruntime-types.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\utils\StringView.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-tools.hpp" />
+    <ClInclude Include="Source\deps\minhook\include\MinHook.h" />
+    <ClInclude Include="Source\hooks\Unity\UnityEngine.Application.h" />
+    <ClInclude Include="Source\Utils.h" />
+    <ClInclude Include="Source\hooks\Unity\Unity.h" />
+    <ClInclude Include="Source\hooks\hook-helper.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp-hook.h" />
+    <ClInclude Include="Source\hooks\Unity\UnityStructs.h" />
+    <ClInclude Include="Source\hooks\Unity\UnityEngine.CoreModule.h" />
+    <ClInclude Include="Source\Global.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cpp_dump.h" />
+    <ClInclude Include="Source\hooks\Unity\UnityEngine.InputLegacyModule.h" />
+    <ClInclude Include="Source\hooks\BackgroundWorker.h" />
+    <ClInclude Include="Source\hooks\Unity\UnityEngine.AssetBundleModule.h" />
+    <ClInclude Include="Source\deps\implot\implot.h" />
+    <ClInclude Include="Source\deps\implot\implot_internal.h" />
+    <ClInclude Include="Source\hooks\Unity\il2cpp\il2cppDictionary.hpp" />
+    <ClInclude Include="Source\hooks\Unity\UnityEngine.UI.h" />
+    <ClInclude Include="Source\hooks\Unity\UnityEngine.GUI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+</Project>
