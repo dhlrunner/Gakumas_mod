@@ -40,3 +40,7 @@ Modding tool for the PC (DMM) version of the game Gakumas
 ## Disclaimer
 
 Use this mod at your own risk. The developers are not responsible for any potential damage or issues arising from its use.
+
+## Screenshot
+![C5002912-4EBC-4597-8100-68E0C878B998](https://github.com/user-attachments/assets/0707f194-93ca-4e70-8d82-261e661ecc31)
+
