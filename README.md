@@ -5,6 +5,7 @@ Modding tool for the PC (DMM) version of the game Gakumas
 ## Features
 
 - **IL2CPP Dump:** Press F8 to generate a dump file from IL2CPP. The dump.cs file will be generated in the modding DLL folder.
+- **Protected GameAssembly.dll dump:** Dump the protected DLL. If you run the IL2CPP Dump function above, it will automatically dump GameAssembly. It won't bypass protection completely (IAT is still broken), but it will be readable by reversing tools like Ghidra.
 - **Unity Function Hooking:** Partial hooking of some Unity functions.
 - **In-Game ImGUI Window:** Creates an ImGUI window within the game. (Open key is F12, but no many functions currently.)
 - **Future Enhancements:** More functionalities are planned to be added in upcoming updates.
